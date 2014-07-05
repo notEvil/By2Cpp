@@ -1,0 +1,25 @@
+#include "common.h"
+namespace sub {
+    struct _type_a_ {
+        int _0;
+        array<int, 2> _1;
+    };
+    struct _type_b_ {
+        array<int, 2> _0;
+        int _1;
+    };
+    struct _type_c_ {
+        array<int, 1> _0;
+        int _1;
+        array<int, 2> _2;
+    };
+    struct _type_d_ {
+        _type_c_ _0;
+        array<int, 2> _1;
+    };
+    struct _type_e_ {
+        int _0;
+        _type_b_ _1;
+        _type_d_ _2;
+    };
+}

@@ -1,0 +1,11 @@
+#include "common.h"
+namespace target {
+    struct _type_a_ {
+        int _0;
+        std::vector<int> _1;
+    };
+    struct _type_b_ {
+        std::vector<int> _0;
+        int _1;
+    };
+}
