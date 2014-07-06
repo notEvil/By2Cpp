@@ -1,6 +1,8 @@
 very early state of development
 
-until now there is only an example showing a conversion of tuple, list creation and unpacking. currently working on functions, namespaces
+the files in this repository are parts of the project that may be of interest. `second.py` is the converter, `target.py` is the module to convert, `.cpp`, `.h` and `.hidden` files are output. `src` contains a patched file of pysonar.
+
+did I mention pysonar already? check it out at https://github.com/yinwang0/pysonar2
 
 By2Cpp
 ======

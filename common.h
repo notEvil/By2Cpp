@@ -21,5 +21,17 @@ struct array {
     T* end() {
 	return _data + size;
     }
+
+    template<int nsize>
+    array<T, nsize> slice(int start) {
+	array<T, nsize> r;
+	std::copy(_data + start, _data + start + size, r._data);
+	return r;
+    }
 };
+
+struct empty {
+};
+
+
 

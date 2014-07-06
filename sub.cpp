@@ -1,6 +1,6 @@
 #include "sub.h"
 namespace sub {
-        int a;
+    int a;
     array<int, 2> b;
     array<array<int, 2>, 2> c;
     _type_a_ d;
@@ -17,8 +17,9 @@ namespace sub {
     int k;
     int m;
     _type_e_ n;
+
     int main(std::string __name__) {
-            a = 1;
+        a = 1;
         b = (array<int, 2>){2, 3};
         c = (array<array<int, 2>, 2>){ 4, 5 ,  6, 7 };
         d = (_type_a_){8,  9, 10 };
@@ -35,6 +36,7 @@ namespace sub {
         k = _var_d_[1];
         m = _var_c_._1;
         n = (_type_e_){1,   2, 3 , 4 ,    5 , 6,  7, 8  ,  9, 10  };
+
         return 0;
     }
 }

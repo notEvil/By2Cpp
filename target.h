@@ -2,6 +2,7 @@
 #include "common.h"
 #include "target.hidden"
 #include "sub.h"
+#include "sub2.h"
 namespace target {
     int main(std::string __name__);
     extern array<int, 2> _var_a_;
@@ -25,4 +26,7 @@ namespace target {
     extern int j;
     extern int k;
     extern int m;
+    int fun(int x);
+    extern int _inner_fun_y_;
+    int inner_fun(int y);
 }

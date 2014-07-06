@@ -8,4 +8,6 @@ namespace target {
         std::vector<int> _0;
         int _1;
     };
+    typedef int (&_type_c_)(int);
+    typedef int (&_type_d_)(int);
 }

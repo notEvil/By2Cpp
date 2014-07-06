@@ -1,6 +1,6 @@
 #include "target.h"
 namespace target {
-        array<int, 2> _var_a_;
+    array<int, 2> _var_a_;
     std::vector<int> b;
     array<array<int, 2>, 2> _var_b_;
     std::vector<array<int, 2> > c;
@@ -21,10 +21,25 @@ namespace target {
     int j;
     int k;
     int m;
+    int fun(int x) {
+        int _default_a_ = _inner_fun_y_;
+        _inner_fun_y_ = x;
+        int r = inner_fun(_inner_fun_y_);
+        int _return_b_ = r;
+        _inner_fun_y_ = _default_a_;
+        return _return_b_;
+    }
+    int _inner_fun_y_;
+    int inner_fun(int y) {
+        int _return_a_ = y;
+
+        return _return_a_;
+    }
     int main(std::string __name__) {
-            sub::main("sub");
+        sub::main("sub");
         #define sub SUB
-                _var_a_ = (array<int, 2>){2, 3};
+        sub2::main("sub2");
+        _var_a_ = (array<int, 2>){2, 3};
         b = std::vector<int>(_var_a_.begin(), _var_a_.end());
         _var_b_ = (array<array<int, 2>, 2>){ 4, 5 ,  6, 7 };
         c = std::vector<array<int, 2> >(_var_b_.begin(), _var_b_.end());
@@ -45,7 +60,9 @@ namespace target {
         j = _var_j_[0];
         k = _var_j_[1];
         m = _var_i_._1;
+        fun(0);
         #undef SUB
+
         return 0;
     }
 }
